@@ -4,7 +4,8 @@ import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent, data: { title: 'Home Page' }, },
+  { path: 'home', component: HomeComponent, data: { title: 'Home Page' }},
+  { path: 'home/:id', component: HomeComponent, data: { title: 'Home Page' }},
   // canActivate: [LoginGuard]
   // { path: '404', component: P404Component, data: { title: 'Page 404' } },
   // { path: '500', component: P500Component, data: { title: 'Page 500' } },

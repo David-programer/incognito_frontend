@@ -1,3 +1,34 @@
-<h1 class="text-3xl font-bold underline text-red-300">
-    home works!
-</h1>
+<div id="div_main" class="min-w-screen min-h-screen bg-gray-950 flex items-center justify-center px-5 py-5" x-data="beer()" x-init="start()">
+    <div class="text-orange-100">
+        <h1 class="text-3xl text-center mb-3 font-bold">{{quote}}</h1>
+        <div class="text-6xl text-center flex w-full items-center justify-center">
+            <div class="text-2xl mr-1 font-bold">En</div>
+            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+                <div class="font-mono leading-none text-[45px] md:text-md" x-text="days">{{timeRemaining.days}}</div>
+                <div class="font-mono uppercase md:text-sm text-xs leading-none">Días</div>
+            </div>
+            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+                <div class="font-mono leading-none text-[45px] md:text-md" x-text="hours">{{timeRemaining.hours}}</div>
+                <div class="font-mono uppercase md:text-sm text-xs leading-none">Horas</div>
+            </div>
+            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+                <div class="font-mono leading-none text-[45px] md:text-md" x-text="minutes">{{timeRemaining.minutes}}</div>
+                <div class="font-mono uppercase md:text-sm text-xs leading-none">Minutos</div>
+            </div>
+            <div class="text-2xl mx-1 font-bold">Y</div>
+            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+                <div class="font-mono leading-none text-[45px] md:text-md" x-text="seconds">{{timeRemaining.seconds}}</div>
+                <div class="font-mono uppercase md:text-sm text-xs leading-none">Segundos</div>
+            </div>
+        </div>
+        <p class="text-md text-center mt-3"><a href="https://www.instagram.com/incognito.app.oficial/" class="underline hover:text-orange-200" target="_blank">@incognito.app.oficial</a></p>
+    </div>
+</div>
+
+<div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+    <div>
+        <a title="Buy me a beer" href="https://www.instagram.com/incognito.app.oficial/" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+            <img class="object-cover object-center w-full h-full rounded-full" src="../../../assets/icons/logo_incognito_.png"/>
+        </a>
+    </div>
+</div>
