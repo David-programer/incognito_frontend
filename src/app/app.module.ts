@@ -3,10 +3,12 @@ import { NgModule, isDevMode } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { HomeComponent } from './views/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,4 +23,5 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
