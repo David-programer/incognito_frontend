@@ -3,10 +3,6 @@
     background-size: cover;
 }
 
-video::-webkit-media-controls {
-    display: none;
-}
-
 @media only screen and (max-device-width : 769px) {
     #div_main{
         background-image: url('../../../assets/background_phone_31.png');
