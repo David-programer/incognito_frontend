@@ -1,22 +1,22 @@
-<div id="div_main" class="min-w-screen min-h-screen bg-gray-950 flex items-center justify-center px-5 py-5" x-data="beer()" x-init="start()">
+<div id="div_main" class="min-w-screen md:min-h-screen h-[670px] bg-gray-950 flex items-center justify-center px-5 py-5" x-data="beer()" x-init="start()">
     <div class="text-orange-100">
-        <h1 class="text-3xl text-center mb-3 font-bold">{{quote}}</h1>
-        <div class="text-6xl text-center flex w-full items-center justify-center">
+        <h1 class="text-3xl text-center mb-3 font-bold text-white drop-shadow-[0_35px_35px_rgba(0,0,0,0.75)]">{{quote}}</h1>
+        <div class="font-bold text-6xl text-center flex w-full items-center justify-center">
             <div class="text-2xl mr-1 font-bold">En</div>
-            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+            <div class="md:w-24 w-[4.5rem] mx-1 p-2 bg-black bg-opacity-60 border-blue-600 border-2 text-blue-500 rounded-lg">
                 <div class="font-mono leading-none text-[45px] md:text-md" x-text="days">{{timeRemaining.days}}</div>
                 <div class="font-mono uppercase md:text-sm text-xs leading-none">Días</div>
             </div>
-            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+            <div class="md:w-24 w-[4.5rem] mx-1 p-2 bg-black bg-opacity-60 border-pink-600 border-2 text-pink-500 rounded-lg">
                 <div class="font-mono leading-none text-[45px] md:text-md" x-text="hours">{{timeRemaining.hours}}</div>
                 <div class="font-mono uppercase md:text-sm text-xs leading-none">Horas</div>
             </div>
-            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+            <div class="md:w-24 w-[4.5rem] mx-1 p-2 bg-black bg-opacity-60 border-blue-600 border-2 text-blue-500 rounded-lg">
                 <div class="font-mono leading-none text-[45px] md:text-md" x-text="minutes">{{timeRemaining.minutes}}</div>
                 <div class="font-mono uppercase md:text-sm text-xs leading-none">Minutos</div>
             </div>
             <div class="text-2xl mx-1 font-bold">Y</div>
-            <div class="md:w-24 w-16 mx-1 p-2 bg-white text-orange-500 rounded-lg">
+            <div class="md:w-24 w-[4.5rem] mx-1 p-2 bg-black bg-opacity-60 border-pink-600 border-2 text-pink-500 rounded-lg">
                 <div class="font-mono leading-none text-[45px] md:text-md" x-text="seconds">{{timeRemaining.seconds}}</div>
                 <div class="font-mono uppercase md:text-sm text-xs leading-none">Segundos</div>
             </div>
@@ -32,3 +32,5 @@
         </a>
     </div>
 </div>
+
+<video autoplay loop src="../../../assets/background_party.mp4"></video>

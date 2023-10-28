@@ -11,10 +11,10 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute){}
 
   public quotes:any[] = [
-    'Texo de prueba 1',
-    'Texo de prueba 2', 
-    'Texo de prueba 3', 
-    'Texo de prueba 4'
+    'Nuevas experiencias 🍹',
+    'Cada momento, una oportunidad 🚀', 
+    // 'Texo de prueba 3', 
+    // 'Texo de prueba 4'
   ];
 
   public quote:string = '';
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
   public positionRandom = (array: any[]):string => array.length ? array[Math.floor(Math.random() * array.length)] : undefined;
 
   ngOnInit(): void {
-    const updateCountdown = ()=>this.timeRemaining = this.calculateTimeRemaining(new Date('2023-10-31T00:00:00Z'));
+    const updateCountdown = ()=>this.timeRemaining = this.calculateTimeRemaining(new Date('2023-10-31T18:00:00Z'));
     setInterval(updateCountdown, 1000);
     updateCountdown();
     
