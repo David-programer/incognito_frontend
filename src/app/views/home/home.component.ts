@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
   public positionRandom = (array: any[]):string => array.length ? array[Math.floor(Math.random() * array.length)] : undefined;
 
   ngOnInit(): void {
-    const updateCountdown = ()=>this.timeRemaining = this.calculateTimeRemaining(new Date('2023-10-31T18:00:00Z'));
+    const updateCountdown = ()=>this.timeRemaining = this.calculateTimeRemaining(new Date('2023-10-31T16:30:00Z'));
     setInterval(updateCountdown, 1000);
     updateCountdown();
     
