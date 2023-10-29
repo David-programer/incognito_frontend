@@ -6,7 +6,6 @@
 #anuncio_moodies{
     background-image: url('../../../assets/eventos/intenalco/md-1920-1820/moodies.png');
     background-size: cover;
-    width: calc(100vw-18px);
     height: 1280px; 
 }
 
