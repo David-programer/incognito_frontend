@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent, data: { title: 'Home Page' }},
-  { path: 'home/:id', component: HomeComponent, data: { title: 'Home Page' }},
+  { path: '', redirectTo: 'intenalco', pathMatch: 'full'},
+  { path: 'intenalco', component: HomeComponent, data: { title: 'Evento Intenalco' }},
+  { path: 'intenalco/:id', component: HomeComponent, data: { title: 'Evento Intenalco' }},
   // canActivate: [LoginGuard]
   // { path: '404', component: P404Component, data: { title: 'Page 404' } },
   // { path: '500', component: P500Component, data: { title: 'Page 500' } },

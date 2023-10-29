@@ -1,4 +1,4 @@
-#div_main{
+#img_inicio{
     background-image: url('../../../assets/eventos/intenalco/md-1920-1820/inicio.png');
     background-size: cover;
 }
@@ -11,20 +11,26 @@
 }
 
 #anuncio_premios{
+    height: 750px;
+    background-size: cover;
     background-image: url('../../../assets/eventos/intenalco/md-1920-1820/premios.gif');
 }
 
 #anuncio_dj{
     background-image: url('../../../assets/eventos/intenalco/md-1920-1820/anuncio_dj.gif');
     background-size: cover;
-    max-width: 100%;
+    height: 750px;
 }
 
 #anuncio_incognito{
+    height: 750px;
+    background-size: cover;
     background-image: url('../../../assets/eventos/intenalco/md-1920-1820/lanzamiento_app.png');
 }
 
 #despedida{
+    height: 750px;
+    background-size: cover;
     background-image: url('../../../assets/eventos/intenalco/md-1920-1820/despedida.gif');
 }
 
@@ -36,12 +42,12 @@
 
     #anuncio_moodies{
         background-image: url('../../../assets/eventos/intenalco/sm-780-480/moodies.png');
-        width: calc(100vw-18px);
         height: 780px; 
     }
 
     #anuncio_dj{
         background-size: cover;
+        height: 750px;
         background-image: url('../../../assets/eventos/intenalco/sm-780-480/anuncio_dj.gif');
     }
 
