@@ -1,11 +1,65 @@
 #div_main{
-    background-image: url('../../../assets/background_evento_31.png');
+    background-image: url('../../../assets/eventos/intenalco/md-1920-1820/inicio.png');
     background-size: cover;
 }
 
+#anuncio_moodies{
+    background-image: url('../../../assets/eventos/intenalco/md-1920-1820/moodies.png');
+    background-size: cover;
+    width: calc(100vw-18px);
+    height: 1280px; 
+}
+
+#anuncio_premios{
+    background-image: url('../../../assets/eventos/intenalco/md-1920-1820/premios.gif');
+}
+
+#anuncio_dj{
+    background-image: url('../../../assets/eventos/intenalco/md-1920-1820/anuncio_dj.gif');
+    background-size: cover;
+    max-width: 100%;
+}
+
+#anuncio_incognito{
+    background-image: url('../../../assets/eventos/intenalco/md-1920-1820/lanzamiento_app.png');
+}
+
+#despedida{
+    background-image: url('../../../assets/eventos/intenalco/md-1920-1820/despedida.gif');
+}
+
 @media only screen and (max-device-width : 769px) {
-    #div_main{
-        background-image: url('../../../assets/background_phone_31.png');
+    #img_inicio{
+        background-image: url('../../../assets/eventos/intenalco/sm-780-480/inicio.png');
         background-size: cover;
+    }
+
+    #anuncio_moodies{
+        background-image: url('../../../assets/eventos/intenalco/sm-780-480/moodies.png');
+        width: calc(100vw-18px);
+        height: 780px; 
+    }
+
+    #anuncio_dj{
+        background-size: cover;
+        background-image: url('../../../assets/eventos/intenalco/sm-780-480/anuncio_dj.gif');
+    }
+
+    #anuncio_premios{
+        background-image: url('../../../assets/eventos/intenalco/sm-780-480/premios.gif');
+        background-size: cover;
+        height:780px;
+    }
+
+    #anuncio_incognito{
+        background-image: url('../../../assets/eventos/intenalco/sm-780-480/lanzamiento_app.png');
+        background-size: cover;
+        height:750px;
+    }
+
+    #despedida{
+        background-image: url('../../../assets/eventos/intenalco/sm-780-480/despedida.gif');
+        background-size: cover;
+        height:750px;
     }
 }
