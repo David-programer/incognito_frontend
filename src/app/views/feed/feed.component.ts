@@ -19,6 +19,14 @@ export class FeedComponent implements OnInit{
       if(response.successful){
         this.feed.next(response.data);
       }
-    })
+    });
+
+    this.socket.on(`publication`, (response:any)=> { 
+      this.feed.next([...this.feed.getValue(), response]);
+      setTimeout(() => {
+        const elemento:any = document.getElementById('container_feed'); // Reemplaza 'miElemento' con el ID de tu elemento
+        elemento.scrollTop = elemento.scrollHeight;
+      }, 200);
+    });
   }
 }
