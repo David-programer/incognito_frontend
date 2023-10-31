@@ -6,13 +6,15 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { HomeComponent } from './views/home/home.component';
 import { ChatComponent } from './views/chat/chat.component';
 import { FeedComponent } from './views/feed/feed.component';
+import { DefaultLayoutComponent } from './containers/default-layout/default-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ChatComponent,
-    FeedComponent
+    FeedComponent,
+    DefaultLayoutComponent
   ],
   imports: [
     BrowserModule,

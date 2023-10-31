@@ -1,105 +1,93 @@
-<!-- START - Fondo -->
-<div class=" flex flex-wrap min-w-screen md:min-h-full h-[670px] bg-gray-950 flex items-center justify-center px-5 py-5" >
-    <!-- START - Chat -->
-    <div class="flex flex-col w-screen min-h-screen text-gray-800 p-10 " *ngIf="showChat">
-        <div class="flex flex-col flex-grow w-full max-w-xl bg-gray-900 shadow-xl rounded-lg overflow-hidden">
-            <div class="flex flex-col flex-grow h-0 p-4 overflow-auto">
-                <div class="flex w-full mt-2 space-x-3 max-w-xs">
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-300"></div>
-                    <div>
-                        <div class="bg-blue-300 p-3 rounded-r-lg rounded-bl-lg">
-                            <p class="text-sm">Hola, está genial la fiesta</p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 3 min</span>
+<!-- START - Chat -->
+<div class="flex flex-col w-screen min-h-screen text-gray-800">
+    <div class="flex flex-col flex-grow w-full max-w-xl bg-gray-900 shadow-xloverflow-hidden">
+        <div class="flex flex-col flex-grow h-0 p-4 overflow-auto">
+            <div class="flex w-full mt-2 space-x-3 max-w-xs">
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-300"></div>
+                <div>
+                    <div class="bg-blue-300 p-3 rounded-r-lg rounded-bl-lg">
+                        <p class="text-sm">Hola, está genial la fiesta</p>
                     </div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
-                    <div>
-                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
-                            <p class="text-sm">Quién es la del disfraz de princesa?</p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 2 min</span>
-                    </div>
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
-                    <div>
-                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
-                            <p class="text-sm">Creo que puede ser Lina la de octavo</p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 2 min</span>
-                    </div>
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs">
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-red-300"></div>
-                    <div>
-                        <div class="bg-red-300 p-3 rounded-r-lg rounded-bl-lg">
-                            <p class="text-sm">Y si vemos como baila el hombre lobo? XD</p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 2 min</span>
-                    </div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
-                    <div>
-                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
-                            <p class="text-sm">Buena idea, hagamos que el reto para el sea bailar bachata! </p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
-                    </div>
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
-                    <div>
-                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
-                            <p class="text-sm">Creo que será interesante ver que tanto sabe, jajaja</p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
-                    </div>
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
-                    <div>
-                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
-                            <p class="text-sm">Veamos que sabes bailar!</p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
-                    </div>
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs">
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-green-300"></div>
-                    <div>
-                        <div class="bg-green-300 p-3 rounded-r-lg rounded-bl-lg">
-                            <p class="text-sm">Les parece si pedimos un perreo? </p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
-                    </div>
-                </div>
-                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
-                    <div>
-                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
-                            <p class="text-sm">Creo que al hombre lobo le va a gustar!!! XD</p>
-                        </div>
-                        <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
-                    </div>
-                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 3 min</span>
                 </div>
             </div>
-            
-            <div class="bg-gray-800 p-4">
-                <input class="bg-gray-900 flex items-center h-10 w-full rounded px-3 text-sm" type="text" placeholder="Escribe tu mensaje?">
+            <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                <div>
+                    <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                        <p class="text-sm">Quién es la del disfraz de princesa?</p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 2 min</span>
+                </div>
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                <div>
+                    <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                        <p class="text-sm">Creo que puede ser Lina la de octavo</p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 2 min</span>
+                </div>
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="flex w-full mt-2 space-x-3 max-w-xs">
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-red-300"></div>
+                <div>
+                    <div class="bg-red-300 p-3 rounded-r-lg rounded-bl-lg">
+                        <p class="text-sm">Y si vemos como baila el hombre lobo? XD</p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 2 min</span>
+                </div>
+            </div>
+            <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                <div>
+                    <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                        <p class="text-sm">Buena idea, hagamos que el reto para el sea bailar bachata! </p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
+                </div>
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                <div>
+                    <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                        <p class="text-sm">Creo que será interesante ver que tanto sabe, jajaja</p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
+                </div>
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                <div>
+                    <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                        <p class="text-sm">Veamos que sabes bailar!</p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
+                </div>
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="flex w-full mt-2 space-x-3 max-w-xs">
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-green-300"></div>
+                <div>
+                    <div class="bg-green-300 p-3 rounded-r-lg rounded-bl-lg">
+                        <p class="text-sm">Les parece si pedimos un perreo? </p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
+                </div>
+            </div>
+            <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                <div>
+                    <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                        <p class="text-sm">Creo que al hombre lobo le va a gustar!!! XD</p>
+                    </div>
+                    <span class="text-xs text-gray-500 leading-none">Hace 1 min</span>
+                </div>
+                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
             </div>
         </div>
+        
+        <div class="bg-gray-800 p-4">
+            <input class="bg-gray-900 flex items-center h-10 w-full rounded px-3 text-sm" type="text" placeholder="Escribe tu mensaje?">
+        </div>
     </div>
-    <!-- END - Chat -->
-    <!-- START - Mobile Menu -->
-    <nav class="bg-[#282836] lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-400 py-4 px-8 flex items-center justify-between rounded-tl-xl rounded-tr-xl" >
-        <button class="p-1" >RETO</button>
-        <button class="p-1" >FEID</button>
-        <button class="text-white p-1" (click)="showChat = !showChat" ><img src="../../../assets/icons/icon_chat.svg" class="h-7 transform hover:scale-125 duration-300 ease-in-out" /></button>
-    </nav>
-    <!-- START - Mobile Menu -->
-
 </div>
-<!-- END - Fondo -->
+<!-- END - Chat -->
