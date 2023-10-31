@@ -5,6 +5,7 @@ import { ChatComponent } from './views/chat/chat.component';
 import { LoginComponent } from './views/login/login.component';
 import { FeedComponent } from './views/feed/feed.component';
 import { DefaultLayoutComponent } from './containers/default-layout/default-layout.component';
+import { PublicationsComponent } from './views/publications/publications.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -20,6 +21,7 @@ const routes: Routes = [
     children: [
       { path: 'chat', component: ChatComponent, data: { title: 'Chat Intenalco' }},
       { path: 'feed', component: FeedComponent, data: { title: 'Feed Intenalco' }},
+      { path: 'publications', component: PublicationsComponent, data: { title: 'Publicaciones Intenalco' }},
       // { path: 'home',component: HomeComponent, data: { title: 'Inicio' } }
      ]
   },

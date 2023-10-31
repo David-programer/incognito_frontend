@@ -1,12 +1,12 @@
 <!-- START - Fondo -->
-<div class=" flex flex-wrap min-w-screen md:min-h-full h-[670px] bg-gray-950 items-center justify-center px-5 py-5" >
-    <router-outlet></router-outlet>
-    <!-- START - Mobile Menu -->
-    <nav class="bg-[#282836] lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-400 py-4 px-8 flex items-center justify-between rounded-tl-xl rounded-tr-xl" >
-        <button class="p-1" >RETO</button>
-        <button class="p-1" >FEID</button>
+<div class="bg-gray-950 h-screen" >
+    <nav class="bg-[#282836] fixed w-full top-0 left-0 text-2xl text-white py-2 px-6 flex items-center justify-around" >
+        <a href="" routerLink="/home/feed">FEED</a>
+        <a href="" routerLink="/home/chat">CHAT</a>
         <!-- <button class="text-white p-1" (click)="showChat = !showChat" ><img src="../../../assets/icons/icon_chat.svg" class="h-7 transform hover:scale-125 duration-300 ease-in-out" /></button> -->
     </nav>
+    <router-outlet></router-outlet>
+    <!-- START - Mobile Menu -->
     <!-- END - Mobile Menu -->
 </div>
 <!-- END - Fondo -->
