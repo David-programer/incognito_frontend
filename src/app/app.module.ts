@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HomeComponent } from './views/home/home.component';
 import { ChatComponent } from './views/chat/chat.component';
+import { FeedComponent } from './views/feed/feed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ChatComponent
+    ChatComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,
