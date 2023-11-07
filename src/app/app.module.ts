@@ -11,6 +11,7 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DefaultLayoutComponent } from './containers/default-layout/default-layout.component';
 
+
 //Variables de entorno
 import { environment } from '../environments/environment';
 import { LoginComponent } from './views/login/login.component';
