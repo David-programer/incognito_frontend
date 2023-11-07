@@ -15,6 +15,7 @@ import { DefaultLayoutComponent } from './containers/default-layout/default-layo
 import { environment } from '../environments/environment';
 import { LoginComponent } from './views/login/login.component';
 import { PublicationsComponent } from './views/publications/publications.component';
+import { IntenalcoComponent } from './views/events/intenalco/intenalco.component';
 const SocketConfig:SocketIoConfig = { url: environment.socket, options: {} };
 
 @NgModule({
@@ -25,7 +26,8 @@ const SocketConfig:SocketIoConfig = { url: environment.socket, options: {} };
     FeedComponent,
     LoginComponent,
     DefaultLayoutComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    IntenalcoComponent
   ],
   imports: [
     FormsModule,

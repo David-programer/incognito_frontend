@@ -11,15 +11,16 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit{
   constructor(private socket: Socket, private router:Router){}
 
-  public user = new FormGroup({
-    nickname : new FormControl('', [Validators.required])
+  public login = new FormGroup({
+    user : new FormControl('', [Validators.required]),
+    password : new FormControl('', [Validators.required])
   });
 
-  public login(event:any, ):void{
-    if(this.user.invalid) return
+  public login_submit(event:any, ):void{
+    if(this.login.invalid) return
     event.preventDefault();
 
-    this.socket.emit('login', this.user.value, (res:any) =>{
+    this.socket.emit('login', this.login.value, (res:any) =>{
       if(res.successful){
         localStorage.setItem('identity', JSON.stringify(res.data));
         this.router.navigate(['home/chat']);

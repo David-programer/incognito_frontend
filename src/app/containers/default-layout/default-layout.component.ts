@@ -11,13 +11,6 @@ import { Router } from '@angular/router';
 export class DefaultLayoutComponent implements OnInit{
   constructor(private socket: Socket, private router:Router){}
 
-  public listeningRoom:string = '';
-
-  public logout(error:string){
-    localStorage.removeItem('token');
-    this.router.navigate(['login', { queryParams: error}]);
-  }
-
   ngOnInit(): void {
     // this.socket.on(`logout:${this.listeningRoom}`, ()=> { this.logout('interruptedSession') });
   }

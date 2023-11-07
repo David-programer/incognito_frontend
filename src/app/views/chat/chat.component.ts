@@ -21,40 +21,6 @@ export class ChatComponent implements OnInit {
     message : new FormControl('', [Validators.required])
   })
 
-  public sendMessage(event:any){
-    if(this.message.invalid) return
-    event.preventDefault();
-
-    const user = JSON.parse(localStorage.getItem('identity') ?? '')
-    this.socket.emit('message', {...user, ...this.message.value}, (res:any) =>{
-      if(res.successful){
-        this.message.reset()
-      }
-      // if(res.successful){
-      //   this.message = '';
-      //   localStorage.setItem('token', res.token);
-      //   this.router.navigate(['home']);
-      // }else this.message = res.message
-    });
-  }
-
   ngOnInit(): void {
-    this.user = JSON.parse(localStorage.getItem('identity') ?? 'null');
-    if(!this.user) this.router.navigate(['/login'])
-    
-    this._globalService.getRequest('/messages/getMessages').subscribe((response:any)=>{
-      if(response.successful){
-        this.messages.next(response.data)
-      }
-    })
-
-    // this.logout('interruptedSession')
-    this.socket.on(`message`, (message:any)=> { 
-      this.messages.next([...this.messages.getValue(), message]);
-      setTimeout(() => {
-        const elemento:any = document.getElementById('container_messages'); // Reemplaza 'miElemento' con el ID de tu elemento
-        elemento.scrollTop = elemento.scrollHeight;
-      }, 200);
-    });
   }
 }
