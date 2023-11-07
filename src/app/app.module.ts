@@ -14,9 +14,11 @@ import { DefaultLayoutComponent } from './containers/default-layout/default-layo
 
 //Variables de entorno
 import { environment } from '../environments/environment';
-import { LoginComponent } from './views/login/login.component';
-import { PublicationsComponent } from './views/publications/publications.component';
-import { IntenalcoComponent } from './views/events/intenalco/intenalco.component';
+import { LoginComponent } from './views/auth/login/login.component';
+import { RegisterUserComponent } from './views/auth/register/register.user/register.user.component';
+import { WelcomeComponent } from './views/auth/welcome/welcome.component';
+// import { PublicationsComponent } from './views/publications/publications.component';
+// import { IntenalcoComponent } from './views/events/intenalco/intenalco.component';
 const SocketConfig:SocketIoConfig = { url: environment.socket, options: {} };
 
 @NgModule({
@@ -27,8 +29,10 @@ const SocketConfig:SocketIoConfig = { url: environment.socket, options: {} };
     FeedComponent,
     LoginComponent,
     DefaultLayoutComponent,
-    PublicationsComponent,
-    IntenalcoComponent
+    RegisterUserComponent,
+    WelcomeComponent,
+    // PublicationsComponent,
+    // IntenalcoComponent
   ],
   imports: [
     FormsModule,
