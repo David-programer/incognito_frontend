@@ -8,6 +8,7 @@ import { DefaultLayoutComponent } from './containers/default-layout/default-layo
 import { PublicationsComponent } from './views/publications/publications.component';
 import { RegisterUserComponent } from './views/auth/register/register.user/register.user.component';
 import { WelcomeComponent } from './views/auth/welcome/welcome.component';
+import { IdentityGuard } from './services/identity.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full'},
@@ -21,7 +22,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, data: { title: 'Login' }},
   { path: 'welcome', component: WelcomeComponent, data: { title: 'Welcome' }},
   { path: 'auth/register/user', component: RegisterUserComponent, data: { title: 'Register User' }},
-  { path: 'home', component: DefaultLayoutComponent, data: { title: 'BETA' }, 
+  { path: 'home', component: DefaultLayoutComponent, canActivate: [IdentityGuard], data: { title: 'BETA' }, 
     children: [
       { path: 'chat', component: ChatComponent, data: { title: 'Chat Intenalco' }},
       { path: 'feed', component: FeedComponent, data: { title: 'Feed Intenalco' }},

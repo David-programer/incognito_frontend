@@ -11,12 +11,12 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DefaultLayoutComponent } from './containers/default-layout/default-layout.component';
 
-
 //Variables de entorno
 import { environment } from '../environments/environment';
 import { LoginComponent } from './views/auth/login/login.component';
 import { RegisterUserComponent } from './views/auth/register/register.user/register.user.component';
 import { WelcomeComponent } from './views/auth/welcome/welcome.component';
+import { IdentityGuard } from './services/identity.guard';
 // import { PublicationsComponent } from './views/publications/publications.component';
 // import { IntenalcoComponent } from './views/events/intenalco/intenalco.component';
 const SocketConfig:SocketIoConfig = { url: environment.socket, options: {} };
@@ -48,7 +48,7 @@ const SocketConfig:SocketIoConfig = { url: environment.socket, options: {} };
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [IdentityGuard],
   bootstrap: [AppComponent]
 })
 

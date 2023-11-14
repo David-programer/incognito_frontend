@@ -8,9 +8,13 @@ export class IdentityGuard implements CanActivate{
     constructor(private _router: Router){}
 
     canActivate(){
-        let token = localStorage.getItem('token');
+        // let token = localStorage.getItem('token');
+        let identity = JSON.parse(`${localStorage.getItem('identity')}`);
         
-        if(token) return true;
-        else { this._router.navigate(['login']); return false }
+        if(identity) return true;
+        else {
+            this._router.navigate(['login']);
+            return false;
+        }
     }
 }
